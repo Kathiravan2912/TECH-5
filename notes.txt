@@ -1,1 +1,5 @@
-hello Guys ,
+Day1:-Admin process
+1.Landing page
+2.Login of Admin
+3.Admin dashboard
+4.Admin sign up.
