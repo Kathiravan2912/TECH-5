@@ -4,6 +4,13 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+
+.body{
+  margin: 0;
+  background: rgb(3,74,156);
+  background: linear-gradient(90deg, rgba(3,74,156,1) 0%, rgba(9,9,121,1) 37%, rgba(10,5,93,1) 77%);
+}
+
 .line {
   height: 2px;
   margin: 10px 10px;
@@ -14,7 +21,9 @@
   margin-top: -10px;
   gap: 47%;
   padding: 3px 10px;
-  background-color: #f1f1f1;
+  background: rgb(3,74,156);
+  background: linear-gradient(90deg, rgba(3,74,156,1) 0%, rgba(9,9,121,1) 37%, rgba(10,5,93,1) 77%);
+  box-shadow: 2px 17px 29px -14px rgba(18,73,185,1);
   position: fixed;
   z-index: 5;
   width: 98.7%;
@@ -28,14 +37,14 @@
 }
 
 .company-name {
-  color: #00aeff;
+  color: #fff200;
   font-size: 20px;
   font-weight: bold;
 }
 
 .nav-link {
   position: relative;
-  color: #00aeff;
+  color: #fff200; 
   text-decoration: none;
   font-size: 18px;
   padding: 10px 20px 10px 10px;
@@ -49,7 +58,7 @@
   bottom: 0;
   width: 0;
   height: 1px;
-  background-color: #2865de;
+  background-color: #fff200;
   transition: width 0.3s ease;
 }
 
@@ -58,7 +67,7 @@
 }
 
 .nav-link:hover {
-  color: #2865de;
+  color: #f7f255;
 }
 
 .navbar-left {
@@ -79,23 +88,24 @@
   height: 40px;
   width: 150px;
   padding: 5px 10px;
-  border: solid rgb(74, 145, 204) 2px;
-  background-color: white;
-  color: #00aeff;
+  border: solid #fff200 2px;
+  background-color: #ffffff;
+  color: darkblue;
   border-radius: 4px;
-  transition: background-color 0.3s;
+  transition: background-color 0.2s;
 }
 
 .login-btn:hover {
-  background-color: #00aeff;
-  border: none;
-  color: white;
+  cursor: pointer;
+  background-color: #fff200;
+  color: #1249b9;
 }
 
 .poster {
   display: grid;
   grid-template-columns: 4fr 6fr;
-  background-color: #eee98b;
+  background: #fff200;
+ /* background: linear-gradient(90deg, rgba(3,74,156,1) 0%, rgba(9,9,121,1) 37%, rgba(10,5,93,1) 77%); */
 }
 
 .hero-image {
@@ -109,13 +119,16 @@
   display: grid;
   justify-content: center;
   align-items: center;
+  color: #1249b9;
   font-size: 35px;
   padding-left: 30px;
 }
 
 .about-topic {
-  background-color: #ffffff;
-  color: #00aeff;
+  /* background-color: #ffffff; */
+  background: rgb(3,74,156);
+background: linear-gradient(90deg, rgba(3,74,156,1) 0%, rgba(9,9,121,1) 37%, rgba(10,5,93,1) 77%);
+  color: #fff200;
   padding: 10px 10px;
   text-align: center;
   font-size: 30px;
@@ -126,6 +139,8 @@
   flex-direction: row;
 }
 .about-container {
+  background: rgb(3,74,156);
+background: linear-gradient(90deg, rgba(3,74,156,1) 0%, rgba(9,9,121,1) 37%, rgba(10,5,93,1) 77%);
   display: flex;
   align-items: center;
   gap: 20px;
@@ -139,13 +154,14 @@
 .about-description h2 {
   font-size: 49px;
   margin-bottom: 10px;
-  color: #333;
+  color: #fff200;
 }
 
 .about-description p {
-  font-size: 24px;
-  color: #555;
-  line-height: 1.6;
+  font-size: 30px;
+  color: #fff200;
+  line-height: 1.7;
+  letter-spacing: 1.3px;
 }
 
 .image-container {
@@ -194,8 +210,9 @@
 }
 
 .intern-topic {
-  background-color: #ffffff;
-  color: #00aeff;
+  background: rgb(3,74,156);
+background: linear-gradient(90deg, rgba(3,74,156,1) 0%, rgba(9,9,121,1) 37%, rgba(10,5,93,1) 77%);
+  color: #fff200;
   padding: 10px 10px;
   text-align: center;
   font-size: 30px;
@@ -203,7 +220,6 @@
 }
 .intern-odd {
   display: grid;
-  background-color: #eee98b;
   border-radius: 14px;
   grid-template-columns: 2fr 3.5fr;
   margin-left: 4%;
@@ -214,7 +230,6 @@
 }
 .intern-even {
   display: grid;
-  background-color: #eee98b;
   border-radius: 14px;
   grid-template-columns: 3.5fr 2fr;
   margin-left: 14%;
@@ -238,13 +253,14 @@
   margin-bottom: 4px;
 }
 
+
 .advantage-image-odd {
   text-align: center;
   border-radius: 5px;
 }
 
 .advantage-content-odd {
-  background-color: #6ec5ed;
+  background-color: #ffffff;
   font-size: 23px;
   color: rgb(0, 0, 0);
   padding: 20px;
@@ -254,10 +270,9 @@
   text-align: justify;
 }
 .advantage-content-odd:hover {
-  /* transform: scale(1.05); */
   transition-duration: 0.2s;
-  background-color: #0670e2;
-  color: white;
+  background-color: #fff200;
+  color: rgb(0, 0, 0);
 }
 
 .advantage-image-even {
@@ -267,7 +282,7 @@
   border-radius: 5px;
 }
 .advantage-content-even {
-  background-color: #6ec5ed;
+  background-color: #ffffff;
   color: rgb(0, 0, 0);
   font-size: 23px;
   padding: 20px;
@@ -277,36 +292,39 @@
   text-align: justify;
 }
 .advantage-content-even:hover {
-  /* transform: scale(1.05); */
   transition-duration: 0.2s;
-  background-color: #0670e2;
-  color: white;
+  background-color: #fff200;
+  color: rgb(0, 0, 0);
 }
 
 .internships-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  padding: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  height: max-content;
+  padding: 10px;
 }
 
 .intern-tech {
-  border: 1px solid #ddd;
+  border: none;
   border-radius: 8px;
+  background-color: #ffffff;
+  /* background: rgb(44,68,194);
+  background: radial-gradient(circle, rgba(44,68,194,1) 0%, rgba(22,34,202,1) 19%, rgba(0,25,93,1) 100%); */
   text-align: center;
-  padding: 15px;
-  background-color: #f9f9f9;
-  box-shadow: 4px 4px 4px 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
+
 .intern-description {
   text-align: center;
+  color: #fff200;
   font-size: 24px;
 }
 
 .intern-tech:hover {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-  transform: scale(1.01);
+  /* transform: scale(1.01); */
 }
 
 .tech-image {
@@ -322,20 +340,6 @@
   gap: 10px;
 }
 
-.options {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.options:hover {
-  background-color: #0056b3;
-}
-
 .tech-options {
   display: flex;
   flex-direction: column;
@@ -347,18 +351,36 @@
 }
 .options {
   height: 50px;
-  width: 450px;
+  width: 300px;
   padding: 5px 10px;
-  border: solid rgb(52, 137, 206) 2px;
-  background-color: white;
-  color: #00aeff;
+  border: solid #1249b9 2px;
+  background-color: #ffffff;
+  color:#1249b9;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+.options:hover {
+  color: #fff200;
+  background-color: #1249b9;
+  cursor: pointer;
+}
+.internship-page{
+  margin-left: 43.4%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 16px;
+  padding: 10px 10px;
+  border: none;
+  background-color: #ffffff;
+  color:#1249b9;
   border-radius: 4px;
   transition: background-color 0.3s;
 }
-.options:hover {
-  background-color: #00aeff;
-  color: white;
-  border: none;
+
+.internship-page:hover{
+  background-color: #fff200;
+  /* border: solid #fff200 2px; */
+  color: #1249b9;
   cursor: pointer;
 }
 
@@ -381,22 +403,27 @@
 .final-footer {
   text-align: center;
   padding: 10px 10px;
-  background-color: #b0aa34;
+  background-color: #00aeff;
   color: white;
 }
 
-@media (max-width: 768px) {
+/* @media (min-width: 670px) {
   .internships-grid {
     grid-template-columns: 1fr;
   }
 }
+@media (min-width: 1070px) {
+  .internships-grid {
+    grid-template-columns: 2fr;
+  }
+} */
 
 .contact-section {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   gap: 20px;
   padding: 40px;
-  background-color: #f4f4f4;
+  
 }
 
 .contact-section .column {
@@ -437,17 +464,17 @@
   background-color: #ffffff;
   margin-left: 38%;
   margin-top: 4%;
-  color: #00aeff;
+  color: #1249b9;
   padding: 12px 20px;
-  border: 2px solid #00aeff;
+  border: 2px solid #1249b9;
   border-radius: 4px;
   cursor: pointer;
   transition-duration: 0.2s;
 }
 
 .contact-section .form button:hover {
-  background-color: #00aeff;
-  color: white;
+  background-color: #1249b9;
+  color: #fff200;
 }
 
 .column-topic{
@@ -475,7 +502,7 @@
 }
 
 .contact-section .social-links ul li a:hover {
-  color: #4caf50;
+  color: #00aeff;
 }
 
 @media (max-width: 768px) {
