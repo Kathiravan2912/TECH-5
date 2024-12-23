@@ -1,0 +1,55 @@
+<div class="page-container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-left">
+        <h1>Welcome, Student!</h1>
+      </div>
+      <div class="header-right">
+        <i class="icon material-icons">notifications</i>
+        <div class="profile">Logout</div>
+      </div>
+    </header>
+  
+    <!-- Page Content -->
+    <div class="content-container">
+      <!-- Sidebar -->
+      <nav class="sidebar" [class.closed]="isSidebarClosed">
+        <button class="toggle-btn" (click)="toggleSidebar()">
+          <i class="material-icons">{{ isSidebarClosed ? 'menu' : 'close' }}</i>
+        </button>
+        <ul>
+          <li>
+            <i class="material-icons">dashboard</i>
+            <span *ngIf="!isSidebarClosed">Dashboard</span>
+          </li>
+          <li>
+            <i class="material-icons">assignment</i>
+            <span *ngIf="!isSidebarClosed">Assignments</span>
+          </li>
+          <li>
+            <i class="material-icons">calendar_today</i>
+            <span *ngIf="!isSidebarClosed">Attendance</span>
+          </li>
+          <li>
+            <i class="material-icons">grading</i>
+            <span *ngIf="!isSidebarClosed">Grades</span>
+          </li>
+          <li>
+            <i class="material-icons">people</i>
+            <span *ngIf="!isSidebarClosed">My Profile</span>
+          </li>
+        </ul>
+      </nav>
+  
+      <!-- Main Content -->
+      <main class="main-content">
+        <div class="content-header">
+          <h2>Dashboard Overview</h2>
+        </div>
+        <div class="content-body">
+          <p>Here you can find detailed insights and updates about your activities.</p>
+        </div>
+      </main>
+    </div>
+  </div>
+  

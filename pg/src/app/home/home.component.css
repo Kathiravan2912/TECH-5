@@ -88,7 +88,7 @@
   height: 40px;
   width: 150px;
   padding: 5px 10px;
-  border: solid #fff200 2px;
+  border: none;
   background-color: #ffffff;
   color: darkblue;
   border-radius: 4px;
@@ -360,7 +360,7 @@ background: linear-gradient(90deg, rgba(3,74,156,1) 0%, rgba(9,9,121,1) 37%, rgb
   transition: background-color 0.2s;
 }
 .options:hover {
-  color: #fff200;
+  color: #ffffff;
   background-color: #1249b9;
   cursor: pointer;
 }

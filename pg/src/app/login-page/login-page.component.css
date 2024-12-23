@@ -1,0 +1,93 @@
+/* Overall Login Page Styling */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 105vh;
+    background-image: url(./assets/bgLogin.png);
+    background-size: cover;
+  }
+  
+  /* Login Container Styling */
+  .login-container {
+    background-color: #fff200;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+  }
+  
+  /* Header Section */
+  .login-header h2 {
+    color: darkblue;
+    font-size: 27px;
+    margin-bottom: 10px;
+  }
+  
+  .login-header p {
+    color: darkblue;
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Group Styling */
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 16px;
+    color: darkblue;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 95%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+  }
+  
+  /* Login Button */
+  .login-button {
+    background-color: rgb(255, 255, 255);
+    color: darkblue;
+    font-size: 18px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .login-button:hover {
+    background-color: darkblue;
+    color: #fff200;
+  }
+  
+  .login-footer {
+    margin-top: 20px;
+  }
+  
+  .login-footer p {
+    color: darkblue;
+    font-size: 14px;
+  }
+  
+  .login-footer a {
+    color: darkblue;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .login-footer a:hover {
+    text-decoration: underline;
+  }
+  
